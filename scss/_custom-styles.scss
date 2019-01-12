@@ -1,0 +1,301 @@
+// Your custom styles
+@import "./core/mixins";
+
+@import "./core/bootstrap/functions";
+
+@import "./core/bootstrap/variables";
+
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 1rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.7rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.9rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 1.4rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.6rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.8rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.9rem;
+  }
+}
+
+.font-size-huge {
+  font-size: 1.2rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 1.5rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.7rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.9rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
+}
+
+.font-size-medium {
+  font-size: 1rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
+}
+
+.font-size-normal {
+  font-size: 1rem;
+  @include media-breakpoint-up(xs) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.3rem;
+  }
+}
+
+.red-glue {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .red-glue-image {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: -50px;
+    left: -200px;
+
+    @include media-breakpoint-up(xl) {
+      top: -4vw;
+    }
+
+    @include media-breakpoint-down(lg) {
+      top: 0px;
+      left: -250px;
+    }
+
+    @include media-breakpoint-down(md) {
+      top: 0px;
+      left: -200px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
+
+.blue-glue {
+  position: absolute;
+  top: -340px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .blue-glue-image {
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+    right: -10rem;
+
+    @include media-breakpoint-down(lg) {
+      top: 5rem;
+      right: -10rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      top: 10rem;
+      right: -10rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: 10rem;
+      right: -15rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      top: 5rem;
+      right: -15rem;
+    }
+  }
+}
+
+.yellow-glue {
+  position: absolute;
+  top: 0rem;
+  left: -520px;
+  width: 200%;
+  height: 400%;
+  overflow: hidden;
+
+  @include media-breakpoint-up(xl) {
+    left: -80%;
+  }
+
+  .yellow-glue-image {
+    position: absolute;
+    text-align: center;
+    top: 0rem;
+    left: 7rem;
+
+    @include media-breakpoint-down(lg) {
+      top: -5rem;
+      left: 10rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      top: 25rem;
+      left: 10rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      top: 10rem;
+      left: 10rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+      top: 5rem;
+      left: 15rem;
+    }
+  }
+}
+
+.navbar {
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      background-color: lightgrey;
+      ul {
+        padding-right: 0 !important;
+        padding-left: auto !important;
+        li {
+          a {
+            text-align: right;
+            color: black !important;
+            border: none !important;
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-title {
+  img {
+    width: 25vw;
+    max-width: 100%;
+    min-width: 300px;
+  }
+
+  p {
+    max-width: 80vw;
+  }
+}
+
+.our-customers {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  img {
+    width: 200%;
+    @include media-breakpoint-up(sm) {
+      width: 150%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+  }
+  
+}
+
+#contact-us {
+  form {
+    width: 30rem;
+    max-width: 100%;
+  }
+  button {
+    width: 7rem;
+    max-width: 100px;
+  }
+}
+
+footer {
+  border-top: 1px solid grey;
+  font-weight: bold !important;
+
+  span {
+    font-size: 0.8rem;
+    @include media-breakpoint-up(lg) {
+      font-size: inherit;
+    }
+  }
+  
+  .row {
+    div {
+      img.w-50 {
+        min-width: 150px;
+      }
+      text-align: center !important;
+      @include media-breakpoint-up(md) {
+        text-align: right !important
+      }
+    }
+  }
+  
+  .icon {
+    margin: 1rem;
+  }
+  
+}
+
+.flex-one {
+  flex: 1;
+}
+
+
+// @include media-breakpoint-up(lg) {
+  
+// }
