@@ -4,6 +4,16 @@ html {
 
 body {
   direction: rtl;
+  overflow-x: hidden;
+  color: #454545 !important;
+}
+
+.text-blue {
+  color: #003865 !important;
+}
+
+.text-grey {
+  color: #454545 !important;
 }
 
 .font-size-big {
@@ -31,23 +41,111 @@ body {
 }
 
 .my-10 {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
 }
 
 .px-8 {
-  padding-right: 8rem;
-  padding-left: 8rem;
+  padding-right: 8rem !important;
+  padding-left: 8rem !important;
 }
 
 .px-15 {
-  padding-right: 15rem;
-  padding-left: 15rem;
+  padding-right: 15rem !important;
+  padding-left: 15rem !important;
 }
 
-
+.min-width-300 {
+  min-width: 300px;
+}
 
 .container-semi-fluid {
   width: 100% !important;
   padding: 5rem !important;
+}
+
+.pt-100 {
+  padding-top: 100%;
+}
+
+.outline-none {
+  outline: none !important
+}
+
+.square-col:before {
+  content: '';
+  width: 0;
+  padding-top: 100%;
+}
+
+/* .square-col:before {
+  content: '';
+  width: 0;
+} */
+
+.square-col:before,
+.square-col-contet {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.square-col:before {
+  padding-top: 100%;
+  /* makes expand to a square */
+}
+
+.square-col:hover {
+  box-shadow: 1px 1px 1px 1px black
+}
+
+.bottom-5rem {
+  bottom: 5rem;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.smooth-rounded-left {
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+}
+
+.smooth-rounded-right {
+  border-top-right-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+
+.smooth-rounded {
+  border-radius: 40px !important;
+}
+
+.ml--3 {
+  margin-left: -2rem !important;
+}
+
+.mr--3 {
+  margin-right: -2rem !important;
+}
+
+.myfooter {
+  border-top: 1px solid black
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.left-0 {
+  left: 0 !important;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: none !important;
 }
