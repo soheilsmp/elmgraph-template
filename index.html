@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- Start your project here-->
-  <div class="red-glue">
+  <div class="red-glue d-none d-md-block">
     <img class="img-responsive red-glue-image" src="./assest/red-glue.png"/>
   </div>
   <!--Main Navigation-->
@@ -26,10 +26,30 @@
     <nav class="navbar navbar-expand-lg navbar-light no-shaddow">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><h2><strong>علمـــــگراف</strong></h2></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+          
+        </button> -->
+
+        <div class="open d-block d-lg-none">
+          <span class="cls"></span>
+          <span>
+            <ul class="sub-menu ">
+              <li>
+                <a href="#our-service" title="about">خدمات</a>
+              </li>
+              <li>
+                <a href="#solutions" title="skills">راهکار ها</a>
+              </li>
+              <li>
+                <a href="#contact-us" title="jobs">تماس با ما</a>
+              </li>
+            </ul>
+          </span>
+          <span class="cls"></span>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item mx-3">
@@ -223,6 +243,23 @@
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <!-- MDB JavaScript -->
   <script type="text/javascript" src="./js/mdb.js"></script>
+
+  <script>
+
+$(document).ready(function() {
+		$(document).delegate('.open', 'click', function(event){
+			$(this).addClass('oppenned');
+			event.stopPropagation();
+		})
+		$(document).delegate('body', 'click', function(event) {
+			$('.open').removeClass('oppenned');
+		})
+		$(document).delegate('.cls', 'click', function(event){
+			$('.open').removeClass('oppenned');
+			event.stopPropagation();
+		});
+	});
+  </script>
 </body>
 
 </html>
