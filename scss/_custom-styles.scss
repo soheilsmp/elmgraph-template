@@ -10,6 +10,12 @@ body, html {
   scroll-behavior: smooth;
 }
 
+.center-justified {
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
 h1 {
   font-size: 1rem;
   @include media-breakpoint-up(xs) {
@@ -294,7 +300,6 @@ footer {
 .flex-one {
   flex: 1;
 }
-
 
 // @include media-breakpoint-up(lg) {
   

@@ -7662,6 +7662,12 @@ body, html {
   scroll-behavior: smooth;
 }
 
+.center-justified {
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
 h1 {
   font-size: 1rem;
   font-size: 1.5rem;
