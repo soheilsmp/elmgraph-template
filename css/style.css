@@ -249,7 +249,7 @@ a.waves-effect, a.waves-light {
   right: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(218, 59, 1, 0.54);
   border-radius: 50%;
   z-index: 18;
   overflow: hidden;
@@ -316,7 +316,7 @@ a.waves-effect, a.waves-light {
   right: -170px;
   top: -160px;
   border-radius: 50%;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(218, 59, 1, 0.54);
 }
 .oppenned span:nth-child(3) {
   -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
