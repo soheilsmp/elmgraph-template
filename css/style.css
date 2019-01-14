@@ -333,7 +333,7 @@ a.waves-effect, a.waves-light {
   padding: 20px 40px;
   background: #fff;
   border-radius: 3px;
-  border: 2px solid #10a1ea;
+  border: 2px solid rgba(218, 59, 1, 0.54);
   overflow: hidden;
   position: relative;
 }
